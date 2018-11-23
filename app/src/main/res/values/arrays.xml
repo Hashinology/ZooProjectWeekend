@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories" >
+
+        <item>Mammal</item>
+        <item>Bird</item>
+        <item>Amphibian</item>
+
+    </string-array>
+</resources>

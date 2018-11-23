@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.hashi.zooproject.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/tvZooName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Zoo"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvZooName"
+            android:text="This zoo has world's most unique animals."
+            android:textSize="@dimen/_12sdp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_above="@+id/btnVisitZoo"
+        android:text="Add Animal Record"
+        android:background="@color/light_green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:onClick="addAnimal"
+        />
+
+    <Button
+        android:id="@+id/btnVisitZoo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Visit Zoo"
+        android:background="@color/light_green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:onClick="goToMajorCategries"
+        />
+
+</RelativeLayout>
